@@ -70,7 +70,7 @@ A starter composition called `MyVideo` is already included—you can start editi
 pnpm run dev
 ```
 
-Open http://localhost:3000 to see the example videos and `MyVideo`.
+Open <http://localhost:3000> to see the example videos and `MyVideo`.
 
 ### 2. Edit your content
 
@@ -137,55 +137,55 @@ on:
 
 When using Claude Code, these slash commands are available:
 
-| Command | Description |
-|---------|-------------|
-| `/new-composition <name>` | Create a new composition with boilerplate |
-| `/generate-image <prompt>` | Generate an image with Nano Banana Pro |
-| `/generate-video <prompt>` | Generate a video with Veo 3.1 |
-| `/transcribe <file>` | Transcribe audio/video with Deepgram |
-| `/screenshot <url>` | Take a full-page screenshot |
+| Command                    | Description                               |
+| -------------------------- | ----------------------------------------- |
+| `/new-composition <name>`  | Create a new composition with boilerplate |
+| `/generate-image <prompt>` | Generate an image with Nano Banana Pro    |
+| `/generate-video <prompt>` | Generate a video with Veo 3.1             |
+| `/transcribe <file>`       | Transcribe audio/video with Deepgram      |
+| `/screenshot <url>`        | Take a full-page screenshot               |
 
 ## Video Presets
 
 Custom presets can be easily created in `src/presets.ts`. Default presets render at 60fps:
 
-| Preset | Resolution | Aspect Ratio |
-|--------|------------|--------------|
-| `Landscape-720p` | 1280×720 | 16:9 |
-| `Landscape-1080p` | 1920×1080 | 16:9 |
-| `Square-1080p` | 1080×1080 | 1:1 |
-| `Portrait-1080p` | 1080×1920 | 9:16 |
+| Preset            | Resolution | Aspect Ratio |
+| ----------------- | ---------- | ------------ |
+| `Landscape-720p`  | 1280×720   | 16:9         |
+| `Landscape-1080p` | 1920×1080  | 16:9         |
+| `Square-1080p`    | 1080×1080  | 1:1          |
+| `Portrait-1080p`  | 1080×1920  | 9:16         |
 
 ## Components
 
 ### Slides
 
-| Component | Description |
-|-----------|-------------|
-| `TitleSlide` | Full-screen title with optional subtitle |
-| `ContentSlide` | Header with body text |
-| `CodeSlide` | Syntax-highlighted code with optional title |
-| `DiagramSlide` | Mermaid or D2 diagrams |
-| `VideoSlide` | Embed video files |
+| Component      | Description                                 |
+| -------------- | ------------------------------------------- |
+| `TitleSlide`   | Full-screen title with optional subtitle    |
+| `ContentSlide` | Header with body text                       |
+| `CodeSlide`    | Syntax-highlighted code with optional title |
+| `DiagramSlide` | Mermaid or D2 diagrams                      |
+| `VideoSlide`   | Embed video files                           |
 
 ### Overlays
 
-| Component | Description |
-|-----------|-------------|
-| `Logo` | Animated logo in corner |
-| `Caption` | Subtitle/caption overlay |
-| `Music` | Background audio with fade in/out |
+| Component | Description                       |
+| --------- | --------------------------------- |
+| `Logo`    | Animated logo in corner           |
+| `Caption` | Subtitle/caption overlay          |
+| `Music`   | Background audio with fade in/out |
 
 ### Media
 
-| Component | Description |
-|-----------|-------------|
-| `BRollVideo` | Video with zoom and timing control |
-| `ZoomableVideo` | Video with multiple zoom segments |
-| `Screenshot` | Scrolling screenshot animation |
-| `AsciiPlayer` | Terminal recording playback |
-| `Code` | Syntax-highlighted code block |
-| `Diagram` | Mermaid/D2 diagram renderer |
+| Component       | Description                        |
+| --------------- | ---------------------------------- |
+| `BRollVideo`    | Video with zoom and timing control |
+| `ZoomableVideo` | Video with multiple zoom segments  |
+| `Screenshot`    | Scrolling screenshot animation     |
+| `AsciiPlayer`   | Terminal recording playback        |
+| `Code`          | Syntax-highlighted code block      |
+| `Diagram`       | Mermaid/D2 diagram renderer        |
 
 ## Styling
 
@@ -213,7 +213,7 @@ import { Sequence } from "remotion";
 // Show logo from 5.2s to 7.9s
 <Sequence from={secondsToFrames(5.2)} durationInFrames={secondsToFrames(2.7)}>
   <Logo src="logo.svg" />
-</Sequence>
+</Sequence>;
 ```
 
 ## Transitions
@@ -236,7 +236,7 @@ import { linearTiming } from "@remotion/transitions";
   <TransitionSeries.Sequence durationInFrames={300}>
     <ContentSlide header="Welcome" content="..." />
   </TransitionSeries.Sequence>
-</TransitionSeries>
+</TransitionSeries>;
 ```
 
 ## Project Structure
