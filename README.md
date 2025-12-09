@@ -36,14 +36,24 @@ These are only needed if you want to use the AI-powered slash commands:
 
 ## Installation
 
+### Create from template
+
+This is a GitHub template repository. To start a new project:
+
+1. Click **"Use this template"** at the top of [this repository](https://github.com/jhartquist/claude-remotion-kickstart)
+2. Choose **"Create a new repository"**
+3. Name your repository and create it
+4. Clone your new repository:
+
 ```bash
-# Clone the repository
-git clone https://github.com/jhartquist/claude-remotion-kickstart.git
-cd claude-remotion-kickstart
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
 
 # Install dependencies
 pnpm install
 ```
+
+> **Note:** Using the template creates an independent repository with a clean git history. This is different from forking, which maintains a connection to the original repo.
 
 ## Environment Variables
 
