@@ -16,7 +16,9 @@
       "type": "stdio",
       "command": "uvx",
       "args": ["elevenlabs-mcp"],
-      "env": {}
+      "env": {
+        "ELEVENLABS_API_KEY": "sk_c782ecaafe256f036c94319809e1f56e9e40ba8b65d6904a"
+      }
     },
     "replicate": {
       "type": "sse",
